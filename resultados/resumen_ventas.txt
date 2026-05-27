@@ -1,0 +1,9 @@
+Resumen del análisis de ventas
+Ventas totales: 318700
+Producto más vendido: Medialuna
+Cantidad vendida del producto más vendido: 75
+
+Ventas por mes:
+Enero: 80500
+Febrero: 85500
+Marzo: 152700
