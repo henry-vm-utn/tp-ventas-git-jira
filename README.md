@@ -4,55 +4,73 @@
 
 Para este trabajo práctico elegí el Escenario B: análisis de ventas de una pequeña empresa.
 
-La idea del proyecto es trabajar con un archivo de ventas simulado y realizar un análisis básico usando Python. A partir de esos datos se van a calcular algunos indicadores simples, como las ventas totales, el producto más vendido y la evolución de las ventas por mes.
+El proyecto trabaja con un archivo de ventas simulado y realiza un análisis básico usando Python. A partir de esos datos se calculan indicadores simples, como ventas totales, producto más vendido y ventas por mes.
 
 ## Objetivo del proyecto
 
 El objetivo principal es aplicar herramientas de organización y control de versiones en un proyecto sencillo de análisis de datos.
 
-Además del código, el trabajo busca mostrar cómo se puede organizar un proyecto usando Jira para dividir tareas, Git para registrar cambios y GitHub para guardar el repositorio de forma remota.
+También se busca relacionar el trabajo técnico con la gestión del proyecto, usando Jira para organizar tareas, Git para registrar cambios y GitHub para guardar el repositorio.
 
 ## Organización del trabajo
 
-Aunque el trabajo fue realizado de manera individual, se respetó la estructura de roles propuesta en la consigna, simulando una pequeña célula de desarrollo:
+Aunque el trabajo fue realizado de manera individual, se respetó la estructura de roles propuesta en la consigna:
 
-- P1 - Líder y organizador: encargado de crear el repositorio, preparar la estructura de carpetas y dejar una primera documentación del proyecto.
-- P2 - Desarrollador técnico: encargado de crear los datos de ventas, desarrollar el script de análisis y generar los resultados.
-- P3 - Revisor y QA: encargado de revisar la documentación, controlar que no se suban archivos innecesarios o sensibles y preparar la integración final.
+- P1 - Líder y organizador: creación del repositorio, estructura inicial y documentación base.
+- P2 - Desarrollador técnico: creación del dataset, script de análisis y generación de resultados.
+- P3 - Revisor y QA: revisión de documentación, seguridad y Pull Request final.
 
 ## Estructura del repositorio
 
-El repositorio se organiza de la siguiente manera:
-
 tp-ventas-git-jira/
 - datos/
+  - ventas.csv
 - scripts/
+  - analisis_ventas.py
 - resultados/
+  - ventas_por_mes.csv
+  - resumen_ventas.txt
+  - grafico_ventas_por_mes.png
 - README.md
+- revision_QA.md
 - .gitignore
-
-La carpeta `datos` se usa para guardar el archivo CSV con la información de ventas.
-
-La carpeta `scripts` contiene el archivo de Python que realiza el análisis.
-
-La carpeta `resultados` se utiliza para guardar los archivos generados por el script, como tablas, resúmenes o gráficos.
 
 ## Herramientas utilizadas
 
-Para realizar el trabajo se utilizan las siguientes herramientas:
+- Jira
+- Git
+- GitHub
+- Google Colab
+- Python
 
-- Jira, para organizar las tareas del proyecto.
-- Git, para llevar el control de versiones.
-- GitHub, para almacenar el repositorio en la nube.
-- Google Colab, para trabajar con Git y ejecutar el código.
-- Python, para procesar los datos y generar resultados.
+## Cómo ejecutar el proyecto
+
+Desde la carpeta principal del repositorio, ejecutar:
+
+python scripts/analisis_ventas.py
+
+El script toma los datos desde:
+
+datos/ventas.csv
+
+y guarda los resultados en:
+
+resultados/
+
+## Resultados generados
+
+El análisis genera:
+
+- una tabla con las ventas agrupadas por mes;
+- un resumen en texto con los principales indicadores;
+- un gráfico simple de ventas por mes.
 
 ## Trazabilidad
 
-Para relacionar la planificación del trabajo con los cambios realizados en el repositorio, los commits se identifican con el código de cada tarea creada en Jira:
+Los commits se relacionan con las tareas creadas en Jira:
 
 - TPV-1: configuración inicial del proyecto.
 - TPV-2: desarrollo del análisis de ventas.
 - TPV-3: revisión de documentación, seguridad y Pull Request.
 
-De esta manera, cada cambio importante queda asociado a una tarea concreta del tablero de Jira.
+De esta forma, cada parte del trabajo queda vinculada con una tarea del tablero.
